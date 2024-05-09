@@ -18,3 +18,11 @@ exemplo./deputados <https://dadosabertos.caara.log.br/op1/v/deputads>
  DELETE:deleçao (delete)
 
  para esse projetos vamos usar  node.js e o mpm
+ 
+
+ -**o que e chocolatey(e porque nao usala agora?)**
+ Em resumo, é um gerenciador de pacotes para Windows. porem nao vamos usar agora pois vai demorar muito para instalar
+ 
+ -****
+ 
+ 
