@@ -1,28 +1,44 @@
 # consumo-APIs
-repositório para demontraçoes e aprendizado para consumo de APIs
+Repositório para as demonstrações e aprendizado sobre o consumo de APIs.
 
-as APis possuem alguns elementos que servem a sua ultilizaçao:
+As APIs possuem algun elementos que servem à sua utilização:
 
--**ponto de entrada**:é o endereço do serviço hospedado e que pode ser acessado atravez de um navegador ou uma ferramenta de consumo de APIs:exemplo<https://dadosabertos.caara.log.br/op1/v2>
+- **Ponto de Entrada**: Endereço do serviço hospedado e que pode ser acessado através de um navegador ou uma ferramenta de consumo de APIs. Exemplo: <https://dadosabertos.camara.leg.br/api/v2>.
+- **Recursos**: São serviços de dados disponíveis para consumo.
+Exemplo: /deputados -> <https://dadosabertos.camara.leg.br/api/v2/deputados>.
+- **Parâmetros**: são informações ou filtros que servem para enviar dados da pesquisa da consulta ou para serem processados pela API. Os parâmetros podem ser acessados para a API da URL ou no corpo (body) da requisição. Exemplo: ?nome=bebeto -> <https://dadosabertos.camara.leg.br/api/v2/deputados?nome=bebeto>.
+- **Métodos**: são os modos de consumo de uma API, que podem ser:
 
--**recursos**:sao serviços de dados disponiveis para consumo.
-exemplo./deputados <https://dadosabertos.caara.log.br/op1/v/deputads>
+    -POST: inserção (CREATE)
+    -GET: consulta/leitura (READ)
+    -UPDATE: atualizaçâo (UPDATE)
+    -DELETE: deleção (DELETE)
 
--**parametros**:sao informaçoes ou filtros que servem para enviar dados de consuta para serem precessados pela API:os parametros podem ser passados pela API atravez da url ou o body da requisiçao  exemplo :nome?=bebeto
-<https://dadosabertos.caara.log.br/op1/v/nome?=bebeto>
+Para este projeto vamos usar o Node.js e o NPM (Node Package Manager):
+- Node.js v20.13.0 LTS - Long Term Suport (versão estável)
 
--**metodos**:sao os modos de consumo de uma API,que podem ser:
- GET:consulta/leitura
- POST:inserçao(create)
- UPOATE:atualizaçao(update)
- DELETE:deleçao (delete)
+NPX -> Node Package eXecuter (Executor de pacote do Node)
 
- para esse projetos vamos usar  node.js e o mpm
- 
+TO-DO (documentar):
+- Instalação e uso do Json Server: <https://github.com/typicode/json-server>
+- Criação do .gitignore
+- Utilidade dos arquivos package
+- Criação do script "start" no package.json
+- Observações em relação do uso do JSON5 vs. JSON: <https://github.com/json5/json5>
+- Instalação das extensões para a formatação de arquivo .json5
+- Chamada do script start com NPM ao invés do NPX
 
- -**o que e chocolatey(e porque nao usala agora?)**
- Em resumo, é um gerenciador de pacotes para Windows. porem nao vamos usar agora pois vai demorar muito para instalar
- 
- -****
- 
- 
+- O que é o Chocolatey (e porque não instalá-lo agora)
+
+**Chocolatey**: é um gerenciador de pacotes para Windows. Ele foi projetado para ser uma estrutura descentralizada para instalar pacotes (aplicativos/ferramentas) mais rapidamente. O Chocolatey é construído sobre a insfraestrutura do NuGet, que atualmente usa o PowerShell por debaixo do capô.
+
+- **Características do Chocolatey**: 
+- Facilidade na instalação de pacotes;
+- Similaridade com os gerenciadores de pacotes do linux "apt" e "yum";
+- Uso simples;
+- Possui abordagem automatizada;
+- Universal para gerenciar todos os softwares do Windows, entre outras. 
+
+
+
+
